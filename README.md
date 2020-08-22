@@ -1,1 +1,3 @@
-hello this is just a test to see if git/github is working
+# PeddieHacks Hackathon
+
+ This is the submission by the Java Junkies
