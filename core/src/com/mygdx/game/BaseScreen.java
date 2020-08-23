@@ -9,6 +9,7 @@ import	com.badlogic.gdx.scenes.scene2d.Stage;
 import	com.badlogic.gdx.utils.viewport.FitViewport;
 import	com.badlogic.gdx.InputMultiplexer;
 
+//This is a templete for all screens
 
 public abstract class BaseScreen implements Screen{
 
