@@ -12,7 +12,7 @@ public class Verbler{
     static String[] hints = {"Insert Hint", "Insert Hint", "Insert Hint", "Insert Hint"};
     public static int Score = 0;
     public static String userInput = "";
-    public static String answer = "Insert Verbler";
+    public static String[] answer = {"Insert Verbler","Insert Verbler","Insert Verbler","Insert Verbler"};
 
     public Verbler(){
 
@@ -28,7 +28,7 @@ public class Verbler{
 
 
             Scanner sc = new Scanner(System.in);
-            System.out.print("Enter a string: ");
+            System.out.print("Enter a guess: ");
             userInput = sc.nextLine();
             System.out.print("You have entered: " + userInput);
 

@@ -25,13 +25,18 @@ public class GameScreen implements Screen {
 
     public void show() {}
 
+    public void create(){
+
+    }
+
     @Override
     public void render(float delta) {
 
         Gdx.gl.glClearColor(0.4f,0.4f,0.7f,0);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-
+        stage.act();
+        stage.draw();
 
     }
 
