@@ -8,7 +8,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Verbler{
-    static String[] verblerWords = {"Insert Verbler", "Insert Verbler", "Insert Verbler", "Insert Verbler"};
+    static String[] verblerWords = {"A", "B", "C", "D"};
     public static int Score = 0;
     public static String userInput = "";
     public static String[] answer = {"Insert Verbler","Insert Verbler","Insert Verbler","Insert Verbler"};
