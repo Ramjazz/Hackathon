@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 public class Verbler{
     static String[] verblerWords = {"Insert Verbler", "Insert Verbler", "Insert Verbler", "Insert Verbler"};
-    static String[] hints = {"Insert Hint", "Insert Hint", "Insert Hint", "Insert Hint"};
     public static int Score = 0;
     public static String userInput = "";
     public static String[] answer = {"Insert Verbler","Insert Verbler","Insert Verbler","Insert Verbler"};
@@ -24,6 +23,7 @@ public class Verbler{
 
             Random random = new Random();
             int index = random.nextInt(verblerWords.length);
+            int index2 = i;
             System.out.println(verblerWords[index]);
 
 
@@ -35,7 +35,7 @@ public class Verbler{
             userInput = userInput.replaceAll("\\s+", "").toLowerCase();
             userInput = userInput.toLowerCase();
 
-            verblerHintPackage();
+            verblerHintPackage(index2);
         }
     }
 
@@ -44,14 +44,10 @@ public class Verbler{
         return verbler.equals(userEnteredWord);
     }
 
-    public static void verblerHintPackage(){
+    public static void verblerHintPackage(int index2){
 
-        if(checkVerbler(answer.toLowerCase().replaceAll("\\s", ""), userInput)) {
+        if(checkVerbler(answer[index2].toLowerCase().replaceAll("\\s", ""), userInput)) {
             System.out.println("Congrats you have answered correctly!");
-            Random randomHint = new Random();
-            int x = 0;
-            int indexHint = randomHint.nextInt(hints.length);
-            System.out.println(hints[indexHint]);
         }
         else {
             System.out.println("\n" + "OH NO! Try again!");
