@@ -17,6 +17,8 @@ public class Verbler{
     }
 
     public void performLogic(){
+
+        //for(int i = 0; i < )
         Random random = new Random();
         int index = random.nextInt(verblerWords.length);
         System.out.println(verblerWords[index]);
@@ -30,27 +32,31 @@ public class Verbler{
         userInput = userInput.replaceAll("\\s+", "").toLowerCase();
         userInput = userInput.toLowerCase();
 
+        verblerHintPackage();
+
+
         String answer = "Answer";
 
-        if(checkVerbler(answer.toLowerCase(), userInput)) {
-            System.out.println("Congrats you have answered correctly!");
-            Score += 10;
-            Random randomHint = new Random();
-            int x = 0;
-            int indexHint = random.nextInt(hints.length);
-            System.out.println(hints[indexHint]);
-        }
-        else {
-            System.out.println("OH NO! Try again!");
-            if(Score >= 10)
-                Score-= 10;
-            else
-                Score += 0;
-        }
+
     }
 
 
     public static boolean checkVerbler(String verbler, String userEnteredWord){
         return verbler.equals(userEnteredWord);
+    }
+
+    public static void verblerHintPackage(){
+
+        if(checkVerbler(answer.toLowerCase(), userInput)) {
+            System.out.println("Congrats you have answered correctly!");
+            Random randomHint = new Random();
+            int x = 0;
+            int indexHint = randomHint.nextInt(hints.length);
+            System.out.println(hints[indexHint]);
+        }
+        else {
+            System.out.println("OH NO! Try again!");
+        }
+
     }
 }
