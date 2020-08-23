@@ -37,7 +37,6 @@ public class Verbler{
             Score += 10;
             Random randomHint = new Random();
             int indexHint = random.nextInt(hints.length);
-            int x = 0;
             System.out.println(hints[indexHint]);
         }
         else {
