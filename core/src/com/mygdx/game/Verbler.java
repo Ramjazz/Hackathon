@@ -11,17 +11,18 @@ public class Verbler{
     static String[] verblerWords = {"A", "B", "C", "D"};
     public static int score = 0;
     public static String userInput = "";
-    public static String[] answer = {"Insert Verbler","Insert Verbler","Insert Verbler","Insert Verbler"};
+    public static String[] answer = {"A","B","C","D"};
 
     public static void makeAnswers(){
         for(int i = 0; i<verblerWords.length; i++){
             answer[i] = verblerWords[i];
         }
+        //System.out.println(answer.toString());
     }
 
     public static void main(String[] args){
         makeAnswers();
-        for(int i = 0; i < 4; i ++) {
+        for(int i = 0; i < verblerWords.length; i ++) {
 
             Random random = new Random();
             int index = random.nextInt(verblerWords.length);
