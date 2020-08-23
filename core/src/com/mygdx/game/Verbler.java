@@ -36,6 +36,7 @@ public class Verbler{
             System.out.println("Congrats you have answered correctly!");
             Score += 10;
             Random randomHint = new Random();
+            int x = 0;
             int indexHint = random.nextInt(hints.length);
             System.out.println(hints[indexHint]);
         }
