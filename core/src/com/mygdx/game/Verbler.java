@@ -18,26 +18,23 @@ public class Verbler{
 
     public void performLogic(){
 
-        //for(int i = 0; i < )
-        Random random = new Random();
-        int index = random.nextInt(verblerWords.length);
-        System.out.println(verblerWords[index]);
+        for(int i = 0; i < 4; i ++) {
+
+            Random random = new Random();
+            int index = random.nextInt(verblerWords.length);
+            System.out.println(verblerWords[index]);
 
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String userInput= sc.nextLine();
-        System.out.print("You have entered: "+userInput);
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter a string: ");
+            String userInput = sc.nextLine();
+            System.out.print("You have entered: " + userInput);
 
-        userInput = userInput.replaceAll("\\s+", "").toLowerCase();
-        userInput = userInput.toLowerCase();
+            userInput = userInput.replaceAll("\\s+", "").toLowerCase();
+            userInput = userInput.toLowerCase();
 
-        verblerHintPackage();
-
-
-        String answer = "Answer";
-
-
+            verblerHintPackage();
+        }
     }
 
 
