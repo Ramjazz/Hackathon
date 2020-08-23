@@ -2,7 +2,7 @@ package com.mygdx.game;
 
 import java.util.Scanner;
 
-public class VerblerShrey{
+public class VerblerFixed{
 
     static String[] verblerWords = {"A", "B", "C", "D"};
     public static int score = 0;
@@ -25,10 +25,11 @@ public class VerblerShrey{
             userInput = userInput.toLowerCase();
 
             rightOrWrong = verblerHintPackage(i);
-            if (rightOrWrong = false){
+            if (rightOrWrong == false){
                 i = i - 1;
             }
         }
+        System.out.println("CONGRATS YOU'VE WON");
     }
 
 
@@ -46,6 +47,7 @@ public class VerblerShrey{
         }
         else {
             System.out.println("\n" + "OH NO! Try again!"+"\n");
+            score -= 10;
             return false;
         }
 
