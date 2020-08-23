@@ -11,6 +11,7 @@ public class Verbler{
     static String[] verblerWords = {"Insert Verbler", "Insert Verbler", "Insert Verbler", "Insert Verbler"};
     static String[] hints = {"Insert Hint", "Insert Hint", "Insert Hint", "Insert Hint"};
     public static int Score = 0;
+    public String userInput = "";
 
     public Verbler(){
 
@@ -27,7 +28,7 @@ public class Verbler{
 
             Scanner sc = new Scanner(System.in);
             System.out.print("Enter a string: ");
-            String userInput = sc.nextLine();
+            userInput = sc.nextLine();
             System.out.print("You have entered: " + userInput);
 
             userInput = userInput.replaceAll("\\s+", "").toLowerCase();
