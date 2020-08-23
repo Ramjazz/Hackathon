@@ -11,13 +11,14 @@ public class Verbler{
     static String[] verblerWords = {"Insert Verbler", "Insert Verbler", "Insert Verbler", "Insert Verbler"};
     static String[] hints = {"Insert Hint", "Insert Hint", "Insert Hint", "Insert Hint"};
     public static int Score = 0;
-    public String userInput = "";
+    public static String userInput = "";
+    public static String answer = "Insert Verbler";
 
     public Verbler(){
 
     }
 
-    public void performLogic(){
+    public static void main(String[] args){
 
         for(int i = 0; i < 4; i ++) {
 
@@ -45,7 +46,7 @@ public class Verbler{
 
     public static void verblerHintPackage(){
 
-        if(checkVerbler(answer.toLowerCase(), userInput)) {
+        if(checkVerbler(answer.toLowerCase().replaceAll("\\s", ""), userInput)) {
             System.out.println("Congrats you have answered correctly!");
             Random randomHint = new Random();
             int x = 0;
@@ -53,7 +54,7 @@ public class Verbler{
             System.out.println(hints[indexHint]);
         }
         else {
-            System.out.println("OH NO! Try again!");
+            System.out.println("\n" + "OH NO! Try again!");
         }
 
     }
