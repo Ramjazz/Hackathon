@@ -17,7 +17,7 @@ public class Verbler{
 
     }
 
-    public static void main(String[] args){;
+    public static void main(String[] args){
 
         for(int i = 0; i < 4; i ++) {
 
@@ -47,10 +47,10 @@ public class Verbler{
     public static void verblerHintPackage(int index2){
 
         if(checkVerbler(answer[index2].toLowerCase().replaceAll("\\s", ""), userInput)) {
-            System.out.println("Congrats you have answered correctly!");
+            System.out.println("\n" + "Congrats you have answered correctly!"+"\n");
         }
         else {
-            System.out.println("\n" + "OH NO! Try again!");
+            System.out.println("\n" + "OH NO! Try again!"+"\n");
         }
 
     }
