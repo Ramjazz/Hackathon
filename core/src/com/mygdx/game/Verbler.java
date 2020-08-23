@@ -13,12 +13,14 @@ public class Verbler{
     public static String userInput = "";
     public static String[] answer = {"Insert Verbler","Insert Verbler","Insert Verbler","Insert Verbler"};
 
-    public Verbler(){
-
+    public static void makeAnswers(){
+        for(int i = 0; i<verblerWords.length; i++){
+            answer[i] = verblerWords[i];
+        }
     }
 
     public static void main(String[] args){
-
+        makeAnswers();
         for(int i = 0; i < 4; i ++) {
 
             Random random = new Random();
