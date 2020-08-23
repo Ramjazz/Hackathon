@@ -1,16 +1,42 @@
 package com.mygdx.game.Screen;
 
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.Game;
 
 public class StartScreen implements Screen {
+    int widthOfApp;
+    int lengthOfApp;
+    public Game game;
+    public StartScreen(Game game) {
+        //widthOfApp = ;
+        //lengthOfApp = ;
+        this.game = game;
+        game.create();
+    }
 
-    public StartScreen{
+    public void show() {
+    }
+
+    @Override
+    public void render(float delta) {
 
     }
 
-    public	void	pause(){}
-    public	void	resume(){}
-    public	void	dispose(){}
-    public	void	show(){}
-    public	void	hide(){}
+    @Override
+    public void resize(int widthOfApp, int lengthOfApp) {
+
+    }
+
+    public void pause() {
+    }
+
+    public void resume() {
+    }
+
+    public void hide() {
+    }
+
+    public void dispose() {
+    }
+
 }
