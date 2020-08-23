@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class Verbler{
     static String[] verblerWords = {"Insert Verbler", "Insert Verbler", "Insert Verbler", "Insert Verbler"};
+    static String[] hints = {"Insert Hint", "Insert Hint", "Insert Hint", "Insert Hint"};
     public static int Score = 0;
 
     public Verbler(){
@@ -34,6 +35,9 @@ public class Verbler{
         if(checkVerbler(answer.toLowerCase(), userInput)) {
             System.out.println("Congrats you have answered correctly!");
             Score += 10;
+            Random randomHint = new Random();
+            int indexHint = random.nextInt(hints.length);
+            System.out.println(hints[indexHint]);
         }
         else {
             System.out.println("OH NO! Try again!");
@@ -43,11 +47,6 @@ public class Verbler{
                 Score += 0;
         }
     }
-
-
-
-
-
 
 
     public static boolean checkVerbler(String verbler, String userEnteredWord){
