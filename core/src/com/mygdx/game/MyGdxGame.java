@@ -1,5 +1,5 @@
 package com.mygdx.game;
-//hello from shrey
+//hello from Arjun
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
