@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Verbler{
     static String[] verblerWords = {"A", "B", "C", "D"};
-    public static int Score = 0;
+    public static int score = 0;
     public static String userInput = "";
     public static String[] answer = {"Insert Verbler","Insert Verbler","Insert Verbler","Insert Verbler"};
 
@@ -50,6 +50,8 @@ public class Verbler{
 
         if(checkVerbler(answer[index2].toLowerCase().replaceAll("\\s", ""), userInput)) {
             System.out.println("\n" + "Congrats you have answered correctly!"+"\n");
+            score += 10;
+            System.out.println(score);
         }
         else {
             System.out.println("\n" + "OH NO! Try again!"+"\n");
